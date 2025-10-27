@@ -808,6 +808,37 @@
         </div>
     </section>
 
+    <p>Now Playing:</p>
+
+<!-- Spotify Embed Section -->
+<section id="music-section">
+  <iframe 
+    id="spotifyPlayer"
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/6NlzjjClPQ1OumgjpoHCeI?utm_source=generator&autoplay=1"
+    width="100%"
+    height="152"
+    frameBorder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+  </iframe>
+</section>
+
+<script>
+  // Automatically restart song after it ends
+  // Since Spotify iframe doesn’t provide a loop option, reload iframe periodically (e.g., every 3 min)
+  const iframe = document.getElementById('spotifyPlayer');
+  
+  // Set approximate duration in milliseconds (adjust if needed)
+  const songDuration = 180000; // 3 minutes
+
+  setInterval(() => {
+    const src = iframe.src;
+    iframe.src = src; // reload to restart playback
+  }, songDuration);
+</script>
+
+
     <!-- Search Section -->
     <section class="search-section" id="search">
         <div class="container">
