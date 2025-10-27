@@ -796,7 +796,65 @@
                 <p>The study of laboratory chemicals includes learning about their structure, properties, uses, side effects, and safety precautions. While chemicals enable countless discoveries and innovations, they can also be dangerous if misused or handled carelessly.</p>
             </div>
         </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Embed Song</title>
+  <style>
+    .spotify-section {
+      margin-top: 20px;
+      text-align: center;
+      padding: 20px;
+      background-color: #1db954;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 400px;
+      height: 152px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
 
+  <p>Click the section below to listen:</p>
+
+  <div class="spotify-section"
+       onclick="window.location.href='https://open.spotify.com/track/1TEwYTZpzOolIP4jaNQfs4?si=fbd40543881f4abb'">
+    <iframe
+      src="https://open.spotify.com/embed/track/1TEwYTZpzOolIP4jaNQfs4?utm_source=generator&autoplay=1"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+    <p>Playing: Ishkkachi Nauka</p>
+  </div>
+
+  <script>
+    // Attempt to set autoplay (may still be blocked)
+    window.addEventListener('load', () => {
+      const iframe = document.querySelector('.spotify-section iframe');
+      if (iframe) {
+        const src = iframe.src;
+        if (!src.includes('&autoplay=1')) {
+          iframe.src = src + '&autoplay=1';
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+ 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
