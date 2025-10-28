@@ -987,7 +987,7 @@
                 <p><strong> - Nikhil Shinde
                 <br>  -       Om Malghe 
                 <br>   -      Piyush Waghmare
-                <br>    _ Aniket Khope </strong></p>
+                <br>    - Aniket Khope </strong></p>
             </div>
         </div>
     </section>
